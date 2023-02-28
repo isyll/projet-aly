@@ -29,7 +29,7 @@ div.top-head {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-color: #222;
+    background-color: var(--secondary);
     color: white;
     font-size: x-small;
 }
@@ -97,7 +97,7 @@ div.top-head-item:last-child > div.head-info {
 }
 
 .search > .search-input {
-    border-left: 1px solid gray;
+    border-left: 1px solid var(--secondary);
     width: 200px;
 }
 
