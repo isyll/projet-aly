@@ -51,6 +51,8 @@ div.top-head-item:first-child > div.head-info {
 
 div.top-head-item:last-child > div.head-info {
     width: 50%;
+    text-align: right;
+
 }
 
 .title {
@@ -167,13 +169,17 @@ main.body {
 .collections {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
     width: 100%;
     height: 220px;
 }
 
 .collections-item {
+    position: relative;
     height: 250px;
-    width: 30%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
 }
 
 .collections-item:first-child {
@@ -189,6 +195,30 @@ main.body {
 .collections-item:nth-child(3) {
     background-image: url("images/camera.jpg");
     background-size: cover;
+}
+
+.collections-red {
+    height: 100%;
+    border-top: 250px solid var(--primary);
+    border-left: 50px solid var(--primary);
+    border-right: 250px solid transparent;
+    opacity: 0.8;
+}
+
+.collections-name {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: min-content; 
+}
+
+.shopnow {
+    margin-top: 10px;
+    font-weight: normal;
+    width: max-content;
 }
 
 .new-products {
@@ -209,6 +239,15 @@ main.body {
     justify-content: space-between;
 }
 
+.new-products-top {
+    padding: 15px 0;
+}
+
+.new-products-main {
+    display: flex;
+    gap: 15px;
+}
+
 .new-products-right-top {
     display: flex;
     gap: 20px;
@@ -221,7 +260,7 @@ main.body {
 
 .new-products-item {
     width: 25%;
-    border: 1px solid gray;
+    border: 1px solid rgb(163, 163, 163);
     padding: 5px;
 }
 
@@ -246,6 +285,7 @@ main.body {
     color: grey;
 }
 .new-products-infos > .product-name {
+    text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     font-size: small;
